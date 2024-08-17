@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Malaysia Magic - News and Blogs</title>
+    <link rel="stylesheet" href="news_blogs_styles.css">
+    <link rel="stylesheet" href="nav_header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Malaysia Magic</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_malaysia.html">About Malaysia</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="travel_info.html">Travel Information</a></li>
+                <li><a href="news_blogs.html">Blog/News</a></li>
+                <li><a href="contact_faq.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!--- news section-->
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <img src="news_blogs_images/news01.jpg" alt="News Image">
+                <div class="news-content">
+                    <h3>Promotion event:</h3>
+                    <h3>MABUL ISLAND, Sabah 4D3N PACKAGE</h3>
+                    <p> <b><del>RM1760</del> -> <strong>RM1690</strong> (included transport fee and meals) </b></p>
+                    <p><b>Expiry Date: 19 Nov 2024</b></p>
+                    <a href="https://www.malaysia.travel/deals/stay-play-2" target="_blank">More Details</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="news_blogs_images/news02.jpg" alt="News Image">
+                <div class="news-content">
+                    <h3>Promotion event:</h3>
+                    <h3>Stay & Play, Selangor 2D1N PACKAGE</h3>
+                    <p><b><del>RM1050</del> -> <strong>RM850</strong> (included breakfast and free WIFI)</p>
+                    <p><b>Expiry Date: 31 Dec 2024</b></p>
+                    <a href="https://www.malaysia.travel/deals/4h3m-mabul-island" target="_blank">More Details</a>
+
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="news_blogs_images/news03.jpg" alt="News Image">
+                <div class="news-content">
+                    <h3>Promotion event:</h3>
+                    <h3>Sarawak Adventure Odyssey 3D2N PACKAGE</h3>
+                    <p><b><del>RM999</del> -> <strong>RM899</strong> (included meal, travel insurance and flight)</p>
+                    <p><b>Expiry Date: 15 Mac 2025</b></p>
+                    <a href="https://www.malaysia.travel/deals/sarawak-adventure-odyssey" target="_blank">More Details</a>
+
+                </div>
+            </div>
+            <br>
+            <div class="news-item">
+                <img src="news_blogs_images/news04.jpg" alt="News Image">
+                <div class="news-content">
+                    <h3>Promotion event:</h3>
+                    <h3>Geotourism Sarawak Delta Geopark 3D2N PACKAGE</h3>
+                    <p><b><del>RM700</del> -> <strong>RM630</strong> (included transport)</p>
+                    <p><b>Expiry Date: 31 Mac 2025</b></p>
+                    <a href="https://www.malaysia.travel/deals/3d2n-geotourism-culture-heritage-gawai-festival-experience-at-sarawak-delta-geopark" target="_blank">More Details</a>
+
+                </div>
+            </div>
+            <br>
+            <!-- Add more news items as needed -->
+        </section>
+
+
+
+        <!-- Categories for Blogs -->
+        <section id="categories" class="blog-filter-section">
+            <h2>Blog Categories</h2>
+            <div class="category-filters">
+                <button onclick="filterPosts('all')">All</button>
+                <button onclick="filterPosts('beach')">Beach/Island</button>
+                <button onclick="filterPosts('city')">City Travel</button>
+                <button onclick="filterPosts('adventure')">Adventure</button>
+                <button onclick="filterPosts('cultural')">Cultural</button>
+            </div>
+            <p class="caption">Click on the image to see details.</p>
+        </section>
+        
+        <!-- Blogs Section -->
+        <section id="blogs">
+            
+            <div class="blog-post beach" onclick="openModal(this)"
+                data-name="Emily Tan"
+                data-date="2024-07-20"
+                data-rating="4/5"
+                data-comments="Pulau Langkawi was an unforgettable escape with its pristine beaches and vibrant culture, perfect for a peaceful yet adventurous getaway">
+                <img src="news_blogs_images/beach01.jpg" alt="Beach Image">
+                <h3>Exploring the Enchanting Beauty of Pulau Langkawi</h3>
+            </div>
+            <div class="blog-post city" onclick="openModal(this)"
+                data-name="Jane Smith"
+                data-date="2024-07-19"
+                data-rating="4/5"
+                data-comments="Capturing the grandeur of the Twin Towers against the bustling cityscape was a surreal experience I’ll never forget.">
+                <img src="news_blogs_images/city01.jpg" alt="City Image">
+                <h3>Snapping Iconic Moments at Kuala Lumpur's Twin Towers</h3>
+            </div>
+            <div class="blog-post adventure" onclick="openModal(this)" 
+                data-name="Ahmad Hassan"
+                data-date="2024-08-10"
+                data-rating="5/5"
+                data-comments="Hiking Mount Kinabalu was an exhilarating challenge, offering breathtaking views that made every step worthwhile.">
+                <img src="news_blogs_images/adventure01.jpg" alt="Adventure Image">
+                <h3>Conquering the Majestic Heights of Mount Kinabalu</h3>
+            </div>
+            <div class="blog-post cultural" onclick="openModal(this)" 
+                data-name="Lily"
+                data-date="2024-07-10"
+                data-rating="5/5"
+                data-comments="The Batu Caves were a captivating experience, with the towering statue and vibrant temples creating an atmosphere of wonder and spirituality.">
+                <img src="news_blogs_images/cultural01.jpg" alt="Adventure Image">
+                <h3>Exploring the Mystical Batu Caves</h3>
+            </div>
+            <div class="blog-post adventure" onclick="openModal(this)" 
+                data-name="Farid Ismail"
+                data-date="2024-07-17"
+                data-rating="4/5"
+                data-comments="Gliding through the lush greenery of Taman Negara on a boat was a serene and breathtaking way to connect with nature.">
+                <img src="news_blogs_images/adventure02.jpg" alt="Adventure Image">
+                <h3>Exploring the Wilds of Taman Negara National Park</h3>
+            </div>
+            <div class="blog-post beach" onclick="openModal(this)"
+                data-name="Jessica"
+                data-date="2024-08-01"
+                data-rating="5/5"
+                data-comments="Swimming alongside turtles in the crystal-clear waters of Pulau Redang was a magical and unforgettable experience.">
+                <img src="news_blogs_images/beach02.jpg" alt="Beach Image">
+                <h3>Swimming with Turtles in Paradise: Pulau Redang</h3>
+            </div>
+            <!-- Add more blog posts with appropriate classes -->
+        </section>
+    </main>
+
+     <!-- Modal Structure -->
+     <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modal-details">
+                <!-- Details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Malaysia Magic. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:alvinlaw1668@1utar.my">alvinlaw1668@1utar.my</a>
+        </address> 
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">
+        <img src="Picture/arrow-up.png" alt="Go to top" width="20" height="20">
+    </button>
+
+    
+    <script src="contact_faq_script.js"></script>
+</body>
+</html>

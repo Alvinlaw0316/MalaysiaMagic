@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Information Malaysia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="travel-info-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Malaysia Magic</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_malaysia.html">About Malaysia</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="news_blogs.html">Blog/News</a></li>
+                <li><a href="contact_faq.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluids ">
+        <div class="header-text">
+          <h1>Travel Information</h1>
+           <p>Guide to Exploring Malaysia</p>
+        </div>  
+    </div>
+
+    <br></br>
+
+    <div class="container">
+        <h2>Practical Information</h2>
+        <p>Get to know the essentials before traveling to Malaysia. Learn about visa requirements, currency, language, and travel tips.</p>
+        <ul>
+            <li><strong>Visa Requirements:</strong> Depending on your nationality, you may need visa to enter Malaysia. Click the button to check details. <a href="https://www.imi.gov.my/index.php/en/main-services/visa/" class="button-link" target="_blank">Check or Apply</a></li>
+            <li><strong>Currency:</strong> The official currency is <strong>Malaysian Ringgit (MYR).</strong></li>
+            <li><strong>Language: Malay </strong>is official language of Malaysia, but English is widely spoken.</li>
+            <li><strong>Travel Tips:</strong> Dress modestly, respect local customs, and be aware of public holidays.</li>
+            <li><strong>SIM Cards: </strong>Getting a local SIM card is convenient and affordable in Malaysia. You can purchase SIM cards at the airport or mobile shops.
+            <p style="color: #ff0000;"><strong>*</strong> Make sure your phone is unlocked before purchasing a SIM card. Plans usually include data, local calls, and some international minutes.</p>  
+        </li>
+        </ul>
+    </div>
+
+    <br></br>
+
+    <div class="container" id="payment-methods-slider">
+        <h2>Popular local payment methods</h2>
+        <div class="slider-buttons">
+            <button class="slider-button left-button">&#8676;</button>
+            <button class="slider-button right-button">&#8677;</button>
+        </div>
+        <div class="slider-track-container">
+            <ul class="slider-track">
+                 <li class="slider current-slide">
+                    <img class="card-logo" src="travel/cash.jpg" alt="Cash Malaysia" onclick="openModal(this)">
+                    <h3>Cash Malaysia</h3>
+                </li>
+                <li class="slider">
+                     <img class="card-logo" src="travel/tng.jpg" alt="Touch 'n Go" onclick="openModal(this)">
+                      <h3>Touch 'n Go</h3>
+                 </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/VISA.png" alt="Visa" onclick="openModal(this)">
+                        <h3>Visa</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/mastercard.png" alt="Master Card" onclick="openModal(this)">
+                        <h3>Master Card</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/FPX.png" alt="FPX Online Banking" onclick="openModal(this)">
+                        <h3>FPX Online Banking</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/boost.png" alt="Boost Pay" onclick="openModal(this)">
+                        <h3>Boost Pay</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/grab pay.png" alt="Grab Pay" onclick="openModal(this)">
+                        <h3>Grab Pay</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/applepay.png" alt="Apple Pay" onclick="openModal(this)">
+                        <h3>Apple Pay</h3>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div class="container" id="sim-slider">
+        <h2>Sim Card in Malaysia</h2>
+        <div class="slider-buttons">
+            <button class="slider-button left-button">&#8676;</button>
+            <button class="slider-button right-button">&#8677;</button>
+        </div>
+        <div class="slider-track-container">
+            <ul class="slider-track">
+                 <li class="slider current-slide">
+                    <img class="card-logo" src="travel/digi.png" alt="Digi" onclick="openModal(this)">
+                    <h3>Digi</h3>
+                </li>
+                <li class="slider">
+                     <img class="card-logo" src="travel/maxis.jpg" alt="Maxis" onclick="openModal(this)">
+                      <h3>Maxis</h3>
+                 </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/hotlink.jpg" alt="Hotlink" onclick="openModal(this)">
+                        <h3>Hotlink</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/umobile.png" alt="Umobile" onclick="openModal(this)">
+                        <h3>Umobile</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/xox.png" alt="XOX" onclick="openModal(this)">
+                        <h3>XOX</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/celcom1.png" alt="Celcom" onclick="openModal(this)">
+                        <h3>Celcom</h3>
+                    </li>
+                    <li class="slider">
+                        <img class="card-logo" src="travel/tunetalk.png" alt="TuneTalk" onclick="openModal(this)">
+                        <h3>TuneTalk</h3>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div class="container">
+        <h2>Transportation Options</h2>
+        <p>Explore different ways to travel around Malaysia.</p>
+        <ul>
+            <li><strong>Public Transport:</strong> Malaysia has a well-connected public transport system including <strong>buses, trains, and taxis.</strong></li>
+            <li><strong>Ride-Hailing Services:</strong> Apps like <strong>Grab</strong> are popular and convenient.</li>
+            <li><strong>Car Rentals:</strong> Renting a car is a great way to explore more remote areas, but you <strong>must</strong> need <strong>Malaysian</strong> or <strong>international driver's license.</strong> </li>
+            <li><strong>Domestic Flights:</strong> For long distances, consider domestic flights with airlines like <strong>AirAsia </strong>and <strong>Malaysia Airlines.</strong></li>
+        </ul>
+    </div>
+
+    <br></br>
+    
+    <div class="container">
+        <h2>Safety Tips and Health Advisories</h2>
+        <p>Stay safe during your travels with these essential tips.</p>
+        <ul>
+            <li><strong>Health:</strong> Ensure you're vaccinated according to the latest health advisories.</li>
+            <li><strong>Personal Safety:</strong> Malaysia is generally safe, but be cautious in crowded areas. Keep your belongings secure.</li>
+            <li><strong>Emergency Contacts:</strong> Know the emergency numbers: <strong>999</strong> for police, fire, and medical assistance.</li>
+        </ul>
+    </div>
+
+    <br></br>
+
+    <div class="container">
+        <h2>Must-See Attractions</h2>
+        <p>Discover some of the top attractions in Malaysia.</p>
+        <div class="image-carousel-wrapper">
+            <div class="image-carousel" data-location="attractions">
+                <img class="carousel-image active" src="travel/KL.jpg" alt="Kuala Lumpur" onclick="openModal(this)">
+                <img class="carousel-image" src="travel/langkawi.jpg" alt="Langkawi" onclick="openModal(this)">
+                <img class="carousel-image" src="travel/gayaisland.jpg" alt="Gaya Island" onclick="openModal(this)">
+                <div class="prev" onclick="changeSlide(-1, 'attractions')">&#10094;</div>
+                <div class="next" onclick="changeSlide(1, 'attractions')">&#10095;</div>
+            </div>
+        </div>
+        <br></br>
+        <p>For more information about Malaysia attractions, please visit &#8658; <a href="destination.html" class="button-link" target="_blank">Destinations</a></li></p>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Malaysia Magic. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:alvinlaw1668@1utar.my">alvinlaw1668@1utar.my</a>
+        </address>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">
+        <img src="Picture/arrow-up.png" alt="Go to top" width="25" height="25">
+    </button>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modals-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

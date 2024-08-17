@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Malaysia Magic - FAQ & Contact Us</title>
+      <link rel="stylesheet" href="contact_faq_css.css">
+      <link rel="stylesheet" href="nav_header.css">
+   </head>
+   <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Malaysia Magic</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_malaysia.html">About Malaysia</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="travel_info.html">Travel Information</a></li>
+                <li><a href="news_blogs.html">Blog/News</a></li>
+                <li><a href="contact_faq.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+       
+
+      <h1>FAQ</h1>
+      <p>
+        <i>Hover mouse to show answer/Click to open permanently</i><br>
+        <i>Click again to close it</i>
+      </p>
+
+      <button onclick="closeAllFaqs()">Close all answers</button><br><br>
+
+      <div class="faq-section">
+          <div class="faq-item" onclick="toggleAnswer(this)">
+              <div class="question">What languages are spoken in Malaysia?</div>
+              <div class="answer">The official language is Malay (Bahasa Malaysia), but English is widely spoken, especially in urban areas and tourist destinations. You may also hear Chinese dialects and Tamil in various regions.</div>
+          </div>
+          <div class="faq-item" onclick="toggleAnswer(this)">
+              <div class="question">How can I get around Malaysia?</div>
+              <div class="answer">Malaysia has a well-developed transportation system, including buses, taxis, ride-hailing services like Grab, and domestic flights. In cities like Kuala Lumpur, you can also use the efficient public transit systems like the MRT and LRT.</div>
+          </div>
+          <div class="faq-item" onclick="toggleAnswer(this)">
+              <div class="question">Is digital payment widely accepted in Malaysia for travelers?</div>
+              <div class="answer">Yes, digital payments like GrabPay, Touch 'n Go, and Apple Pay are widely accepted in Malaysia, especially in cities and tourist spots.</div>
+          </div>
+      </div>
+
+      <h1>Contact Us</h1>
+      <form id="Qform" method="GET" action="">
+          <p>Please provide your question and information detail for us. We will reply in 3 working days.</p><br>
+
+          <div class="column">
+              <label for="subject">Subject*:</label>
+              <input name="subject" id="subject" type="text" required autofocus size="50"><br><br>
+
+              <label for="userName">Name*:</label>
+              <input name="userName" id="userName" type="text" required autofocus>
+
+              <label for="userEmail">Email*:</label>
+              <input name="userEmail" id="userEmail" type="email" required autofocus><br><br>
+
+              <label for="userTel">Tel*:</label>
+              <input name="userTel" id="userTel" type="tel" required autofocus placeholder="(###) ###-####" pattern="\(\d{3}\) +\d{3}-\d{4}"><br><br>
+
+              <label for="issueCategory">Issue Category*:</label>
+              <select id="issueCategory" name="issueCategory" required>
+                  <option value="" disabled selected>Select Issue Category</option>
+                  <option value="travel">Travel-based question</option>
+                  <option value="bug">Bug report</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+              </select><br><br>
+          </div>
+
+          <div class="column">
+              <div id="ratingSection" style="display: none;">
+                  <label for="rating">Rate your experience:</label>
+                  <select id="rating" name="rating">
+                      <option value="1">1 - Very Poor</option>
+                      <option value="2">2 - Poor</option>
+                      <option value="3">3 - Average</option>
+                      <option value="4">4 - Good</option>
+                      <option value="5">5 - Excellent</option>
+                  </select><br><br>
+              </div>
+
+              <div id="travelDate" style="display: none;">
+                  <label for="travelDate">Travel Date*</label>
+                  <input name="travelDate" id="travelDate" type="month" required>
+              </div>
+
+              <label for="userComments">Comments:</label><br>
+              <textarea id="userComments" name="userComments" rows="8" cols="64" placeholder="Enter comments/messages here."></textarea><br><br>
+
+              <label for="userFileUpload">Upload relevant File</label>
+              <p><i>Eg: screenshot, travel document, travel image that willing to be posted on our website</i></p>
+              <input id="userFileUpload" name="userFileUpload" type="file"><br><br>
+
+              <label>
+                  <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+              </label>
+              <input type="submit" value="Send Message">
+              <input type="reset" value="Clear all">
+          </div>
+      </form>
+      
+      <footer>
+        <p>&copy; 2024 Malaysia Magic. All rights reserved.</p>
+        <address>
+            Can also contact us at <a href="mailto:alvinlaw1668@1utar.my">alvinlaw1668@1utar.my</a>
+        </address> 
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">
+        <img src="Picture/arrow-up.png" alt="Go to top" width="20" height="20">
+    </button>
+
+    
+      <script src="contact_faq_script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="travel-info-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Malaysia Magic</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_malaysia.html">About Malaysia</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="travel_info.html">Travel Information</a></li>
+                <li><a href="news_blogs.html">Blog/News</a></li>
+                <li><a href="contact_faq.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <div class="container-fluid ">
+        <div class="header-text">
+          <h1>Discover Malaysian Cuisine</h1>
+           <p>Explore the flavors of Malaysia through its diverse and rich culinary heritage</p>
+        </div>  
+    </div>
+
+    <br></br>
+        
+    <div id="intro" class="container">
+        <h2>Introduction to Malaysian Cuisine</h2>
+        <p>Malaysian cuisine is a unique blend of various cultures, including Malay, Chinese, Indian, and indigenous traditions. As you travel through Malaysia, each region offers distinct culinary experiences that are a must-try for any adventurer.</p>
+    </div>
+
+    <br></br>
+
+    <div id="popular-dishes" class="container">
+        <h2>Popular Dishes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/Nasi Lemak2.jpg" alt="Nasi Lemak" class="img-fluid" onclick="openModal(this)" >
+                    </div>
+                    <h3>Nasi Lemak</h3>
+                    <p>The national dish of Malaysia, consisting of fragrant rice cooked in coconut milk, served with sambal, fried crispy anchovies, toasted peanuts, and boiled egg.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/Laksa.jpeg" alt="Laksa" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Laksa</h3>
+                    <p>A spicy noodle soup with a rich coconut milk base, often served with prawns or chicken.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/roti canai.jpeg" alt="Roti Canai" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Roti Canai</h3>
+                    <p>A crispy, flaky flatbread usually served with dhal (lentil curry) or other savory sauces.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/Satay.png" alt="Satay" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Satay</h3>
+                    <p>Grilled skewers of marinated meat, often served with a rich peanut sauce, cucumber, and onions. A popular street food in Southeast Asia.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/cheese naan.jpg" alt="Cheese Naan" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Cheese Naan</h3>
+                    <p>A soft, leavened flatbread stuffed with melted cheese, typically served as a side dish in Indian cuisine.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/wontonmee.jpg" alt="WonTon Mee" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>WonTon Mee</h3>
+                    <p>A Cantonese noodle dish featuring thin egg noodles, wonton dumplings, and a light broth or soy-based sauce.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/nasi biryani.jpg" alt="Nasi Biryani" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Nasi Biryani</h3>
+                    <p>A fragrant rice dish cooked with spices, meat (like chicken, beef, or lamb), and sometimes accompanied by boiled eggs and vegetables.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/Mee Rebus.jpg" alt="Mee Rebus" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Mee Rebus</h3>
+                    <p>Yellow egg noodles served in a thick, spicy, and slightly sweet gravy made from potatoes, dried shrimp, and a blend of spices. Often garnished with hard-boiled eggs and lime.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="dish-container">
+                    <div class="image-container">
+                        <img src="cuisine/Chicken Rice.jpg" alt="Chicken Rice" class="img-fluid"  onclick="openModal(this)">
+                    </div>
+                    <h3>Chicken Rice</h3>
+                    <p>A flavorful dish consisting of tender poached or roasted chicken served over fragrant rice cooked in chicken broth, often accompanied by cucumber slices, garlic chili sauce, and soy sauce. It's a beloved dish in many Southeast Asian countries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="street-food" class = "container" >
+    <div class="location">
+        <h2>Street Food Experiences</h2>
+        <p>Experience the bustling street food scenes in cities like Kuala Lumpur. From satay to char kway teow, the variety is endless.</p>
+        <li><strong>Jalan Alor, Kuala Lumpur </strong><a href="https://maps.app.goo.gl/UedWNSH16EwXwKNC9" class="button-link" target="_blank" >Go to Google map</a></li>
+        <p><br>Jalan Alor is located in the west of Bukit Bintang, Kuala Lumpur. It is the most famous tourist food street in Kuala Lumpur. There are more than 20 restaurants and more than 200 stalls on the street, selling traditional Malaysian Chinese food and Cantonese food. Many tourists go to Jalan Alor to find food such as roast chicken wings, grilled stingray, fried rice noodles, satay and Fujian fried noodles.</br></p>
+        <div class="info-table">
+            <div class="info-row">
+                <div class="info-column label">Address</div>
+                <div class="info-column value">Alor Street, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</div>
+            </div>
+            <div class="info-row">
+                <div class="info-column label">Opening Hours</div>
+                <div class="info-column value">2.30pm to 12.00am (Everyday)</div>
+            </div>
+        </div>
+        <div class="image-carousel-wrapper">
+            <div class="image-carousel" data-location="jalan-alor">
+                <button class="prev" onclick="changeSlide(-1, 'jalan-alor')">&#10094;</button>
+                <img class="carousel-image" src="cuisine/location/jalan_alor2.jpg" alt="Jalan Alor, Kuala Lumpur"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/alor1.jpg" alt="Fried Food"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/alor2.jpg" alt="Char Kuey Teow"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/alor3.jpg" alt="Satay"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/alor4.jpg" alt="Sea Food"  onclick="openModal(this)">
+                <iframe class="carousel-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8056941521363!2d101.70897306970478!3d3.1459203827105644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362993b6bbf9%3A0xb51e49d2f36c3d3f!2s%E4%BA%9A%E7%BD%97%E8%A1%97%2C%20Bukit%20Bintang%2C%20Kuala%20Lumpur%2C%20Wilayah%20Persekutuan%20Kuala%20Lumpur!5e0!3m2!1szh-CN!2smy!4v1723654196787!5m2!1szh-CN!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="next" onclick="changeSlide(1, 'jalan-alor')">&#10095;</button>
+            </div>
+        </div>
+        <br></br>
+
+        <li><strong>Pasar Malam Taman Connaugh </strong><a href="https://maps.app.goo.gl/Las8YuSsevsSf2dH6" class="button-link" target="_blank">Go to Google map</a></li>
+        <p><br>The 2km long Taman Connaught Pasar Malam is the most famous and second longest night market Malaysia. There are various Malaysian food and snacks including Chinese, Malay, Indian, and Western dishes. Some popular items include grilled seafood, satay, laksa, dim sum, and so on.</br></p>
+        <div class="info-table">
+            <div class="info-row">
+                <div class="info-column label">Address</div>
+                <div class="info-column value">Jalan Cerdas, Taman Connaught, 56000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</div>
+            </div>
+            <div class="info-row">
+                <div class="info-column label">Opening Hours</div>
+                <div class="info-column value">5.00 pm to 1.00 am (Wednesday)</div>
+            </div>
+        </div>
+        <div class="image-carousel-wrapper" >
+            <div class="image-carousel" data-location="taman-connaugh" >
+                <button class="prev" onclick="changeSlide(-1, 'taman-connaugh')">&#10094;</button>
+                <img class="carousel-image" src="cuisine/location/tm0.jpg" alt="Pasar Malam Taman Connaugh"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/saltegg.jpg" alt="saltegg sotong"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/Stinky_Tofu.jpg" alt="Stinky Tofu"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/tm1.jpg" alt="Satay"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/tm2.jpg" alt="Apam Balik"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/tm3.jpg" alt="Seafood"  onclick="openModal(this)">
+                <iframe class="carousel-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.049592861753!2d101.73758711371367!3d3.081437922805061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc35bad074978d%3A0xa97f052585f0523d!2z5bq35LmQ5aSc5biC!5e0!3m2!1szh-CN!2smy!4v1723661210990!5m2!1szh-CN!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="next" onclick="changeSlide(1, 'taman-connaugh')">&#10095;</button>
+            </div>
+        </div>
+        <br></br>
+
+        <li><strong>Pasar Malam Setia Alam </strong><a href="https://maps.app.goo.gl/tnXXhoRG1dJPceFe8"  class="button-link" target="_blank">Go to Google map</a></li>
+        <p><br>The 2.4 km Setia Alam night market was included in the Malaysian Book of Records in 2011, making it the longest night market in Malaysia. the night market offers a wide range of food, clothing, accessories, and homewares. It is also known for its wide variety of food stalls that serve a variety of Malaysian and international cuisines, including Chinese, Malay, Indian, and Western food. Some popular items include grilled seafood, satay, nasi lemak, and Hokkien mee </br></p>
+        <div class="info-table">
+            <div class="info-row">
+                <div class="info-column label">Address</div>
+                <div class="info-column value">Jalan Setia Prima A U13/A, Setia Alam, 40170 Shah Alam, Selangor</div>
+            </div>
+            <div class="info-row">
+                <div class="info-column label">Opening Hours</div>
+                <div class="info-column value">4.30 pm to 10.00 pm (Saturday)</div>
+            </div>
+        </div>
+        <div class="image-carousel-wrapper">
+            <div class="image-carousel" data-location="setia-alam" >
+                <button class="prev" onclick="changeSlide(-1, 'setia-alam')">&#10094;</button>
+                <img class="carousel-image" src="cuisine/location/setia0.jpg" alt="Pasar Malam Setia Alam"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/setia1.jpg" alt="Ayam Goreng"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/setia2.jpg" alt="Food of Salt Egg "  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/setia3.jpg" alt="Durian"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/setia4.jpg" alt="Dimsum"  onclick="openModal(this)">
+                <img class="carousel-image" src="cuisine/setia5.jpg" alt="Crab"  onclick="openModal(this)">
+                <iframe class="carousel-image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31871.557526007364!2d101.4364735!3d3.1093359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc53f261f2bd37%3A0x526f7c6faf3c200a!2z5a6e6L6-6Zi_5Y2X5aSc5biC!5e0!3m2!1szh-CN!2smy!4v1723662558253!5m2!1szh-CN!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="next" onclick="changeSlide(1, 'setia-alam')">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div id="tips" class="container">
+        <h2>Travel Tips for Food Lovers</h2>
+        <ul>
+            <li>Don't miss the night markets for authentic street food.</li>
+            <li>Be open to trying new things, but be mindful of spice levels if you're not used to spicy food.</li>
+            <li>Always ensure food is freshly cooked when buying from street vendors.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Malaysia Magic. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:alvinlaw1668@1utar.my">alvinlaw1668@1utar.my</a>
+        </address>
+    </footer>
+
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modals-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">
+        <img src="Picture/arrow-up.png" alt="Go to top" width="25" height="25">
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

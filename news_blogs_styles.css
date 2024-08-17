@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+
+/* news section   */
+#news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between news items */
+    
+}
+
+#news h2 {
+    position: relative;
+    background-image: url("news_blogs_images/news.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 40px;
+    padding: 40px 25px;
+    color:rgb(0, 0, 0);
+}
+
+
+.news-item {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.news-item img {
+    max-width: 200px; /* Limit the width of the image */
+    object-fit: cover; /* Ensure the image covers the allocated space */
+    border-right: 1px solid #ccc;
+}
+
+.news-content {
+    padding: 15px;
+    flex: 1; /* Allow the content to take the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.news-content p {
+    color: #666;
+}
+
+
+
+/*main and header*/
+
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+/* For the blog fiter section*/
+.blog-filter-section {
+    position: relative;
+    background-image: url('news_blogs_images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+   
+}
+
+.blog-filter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.blog-filter-section h2,
+.blog-filter-section .category-filters {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-filters button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-filters button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.category-filters button:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+#blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.blog-post {
+    width: fit-content;
+    overflow: hidden;
+    border: 1px solid #8b8282;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.blog-post img {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover; /* This ensures the image covers the entire container without distorting */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*new added*/
+.blog-post h3 {
+    font-size: 1em; /* Decrease the text size */
+    color: #333;
+    margin-top: 5px;
+}
+
+
+.blog div{
+    position:center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .category-filters button {
+        width: auto;
+        margin: 5px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog-post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .blog-post img {
+        max-width: 90%; /*before is 30*/
+    }
+
+    .blog-post h3 {
+        font-size: 0.9em; 
+    }
+
+    .blog-details {
+        padding: 20px;
+    }
+}
+.caption {
+    font-size: 0.9em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    z-index: 2;
+    position:relative;
+    display: block;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom */
+    right: 30px; /* Place the button 30px from the right */
+    width: 50px; /* Set a width */
+    height: 50px; /* Set a height */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    background-color: #555;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0; /* Remove padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 30px; /* Adjust font size */
+    display: flex; /* Center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0f4fc5; /* Add a dark-grey background on hover */
+}

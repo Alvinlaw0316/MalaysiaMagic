@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Malaysia Magic - Discover Your Next Adventure</title>
+    <meta name="description" content="Discover the best destinations and experiences in Malaysia with Malaysia Magic.">
+    <meta name="keywords" content="Malaysia, travel, tourism, destinations, experiences, cuisine">
+    <meta name="author" content="Malaysia Magic">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="cookie-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cookie Preferences</h2>
+            <p>We use cookies to enhance your browsing experience and analyze our traffic. Please select your preferences below:</p>
+            <div class="cookie-option">
+                <input type="checkbox" id="essential" checked disabled>
+                <label for="essential">Essential Cookies (Required)</label>
+            </div>
+            <div class="cookie-option">
+                <input type="checkbox" id="functional">
+                <label for="functional">Functional Cookies</label>
+            </div>
+            <div class="cookie-option">
+                <input type="checkbox" id="analytics">
+                <label for="analytics">Analytics Cookies</label>
+            </div>
+            <div class="cookie-option">
+                <input type="checkbox" id="advertising">
+                <label for="advertising">Advertising Cookies</label>
+            </div>
+            
+            <div class="email-input">
+                <label for="user-email">Email Address (Optional):</label>
+                <input type="email" id="user-email" placeholder="Enter your email">
+            </div>
+            <button class="btn btn-primary" onclick="savePreferences()">Save Preferences</button>
+            <button class="btn btn-secondary" onclick="rejectAll()">Reject All</button>
+        </div>
+    </div>
+    
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Malaysia Magic</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_malaysia.html">About Malaysia</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="travel_info.html">Travel Information</a></li>
+                <li><a href="news_blogs.html">Blog/News</a></li>
+                <li><a href="contact_faq.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-slider">
+                <div class="hero-slide" style="background-image: url(Picture/img1.jpg);"></div>
+                <div class="hero-slide" style="background-image: url(Picture/img2.jpg);"></div>
+                <div class="hero-slide" style="background-image: url(Picture/img20.jpg);"></div>
+                <div class="hero-slide" style="background-image: url(Picture/img19.jpg);"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Explore Malaysia</h1>
+                <p>Embark on unforgettable journeys to breathtaking destinations</p>
+                <a href="destination.html" class="cta-button">Popular Destinations</a>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide">&lt;</button>
+                <button class="next-slide">&gt;</button>
+            </div>
+        </section>
+
+        <section id="about_malaysia" class="about-section">
+            <h2>About Malaysia</h2>
+            <p>Discover the rich cultural heritage and natural beauty of Malaysia. From bustling cities to tranquil beaches, Malaysia offers a diverse range of experiences for every traveler.</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Picture/img3.jpg" alt="Culture">
+                    <h3>Culture</h3>
+                    <p>Malaysia's culture is a vibrant tapestry of diverse ethnic traditions, languages, and religions, harmoniously blending Malay, Chinese, Indian, and indigenous influences.</p>
+                </div>
+                <div class="card">
+                    <img src="Picture/img5.jpg" alt="History">
+                    <h3>History</h3>
+                    <p>Malaysia's history is a journey from ancient trade, through colonial rule, to a diverse and independent nation.</p>
+                </div>
+                <div class="card">
+                    <img src="Picture/img6.jpg" alt="Geography">
+                    <h3>Geography</h3>
+                    <p>Malaysia's geography features a stunning mix of tropical rainforests, mountains, and coastal areas, divided by the South China Sea into Peninsular Malaysia and East Malaysia on Borneo Island.</p>
+                </div>
+            </div>
+            <a href="about_malaysia.html" class="learn-more-btn">Learn More</a>
+        </section>
+
+        <section class="destinations-section">
+            <h2>Discover Top Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <div class="destination-image" style="background-image: url('Picture/kuala_lumpur.jpg');"></div>
+                    <div class="destination-content">
+                        <h3>Kuala Lumpur</h3>
+                        <p>The bustling capital city with iconic landmarks like the Petronas Towers and vibrant street markets.</p>
+                        <a href="destination.html" class="destination-link">Explore More</a>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image" style="background-image: url('Picture/penang.jpg');"></div>
+                    <div class="destination-content">
+                        <h3>Penang</h3>
+                        <p>An island known for its rich cultural heritage, street art, and mouthwatering cuisine.</p>
+                        <a href="destination.html" class="destination-link">Explore More</a>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <div class="destination-image" style="background-image: url('Picture/langkawi.jpg');"></div>
+                    <div class="destination-content">
+                        <h3>Langkawi</h3>
+                        <p>A tropical paradise with pristine beaches, lush rainforests, and duty-free shopping.</p>
+                        <a href="destination.html" class="destination-link">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="experiences-section">
+            <h2>Memorable Experiences</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <img src="Picture/adventure.jpg" alt="Adventure" class="experience-image">
+                    <div class="experience-info">
+                        <h3>Adventure</h3>
+                       <p>Experience the thrill of white water rafting in Kuala Kubu Bharu, where exhilarating rapids and breathtaking rainforest views combine for an unforgettable adventure.</p>
+                        <a href="experiences.html" class="experience-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <img src="Picture/nature.jpg" alt="Nature" class="experience-image">
+                    <div class="experience-info">
+                        <h3>Nature</h3>
+                        <p>Birdwatching in Kuching Wetlands offers a serene escape into Malaysia's avian paradise, where visitors can observe a diverse range of bird species in their natural mangrove and mudflat habitats.</p>
+                        <a href="experiences.html" class="experience-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <img src="Picture/heritage.jpg" alt="Heritage" class="experience-image">
+                    <div class="experience-info">
+                        <h3>Heritage</h3>
+                        <p>Explore Melaka's historic sites, where centuries-old architecture, vibrant heritage, and captivating stories bring the city’s rich past to life.</p>
+                        <a href="experiences.html" class="experience-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="cuisine-section">
+            <h2>Flavors of Malaysia</h2>
+            <div class="cuisine-wrapper">
+                <div class="cuisine-card">
+                    <a href="cuisine.html" class="cuisine-link-wrapper">
+                        <img src="cuisine/Nasi Lemak2.jpg" alt="nasi lemak" class="cuisine-image">
+                    </a>
+                    <div class="cuisine-overlay">
+                        <h3>Malay Cuisine</h3>
+                        <p>Nasi Lemak</p>
+                        <a href="cuisine.html" class="cuisine-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="cuisine-card">
+                    <a href="cuisine.html" class="cuisine-link-wrapper">
+                        <img src="cuisine/Laksa.jpeg" alt="Laksa" class="cuisine-image">
+                    </a>
+                    <div class="cuisine-overlay">
+                        <h3>Chinese Cuisine</h3>
+                        <p>Laksa</p>
+                        <a href="cuisine.html" class="cuisine-link">Learn More</a>
+                    </div>
+                </div>>
+                <div class="cuisine-card">
+                    <a href="cuisine.html" class="cuisine-link-wrapper">
+                        <img src="cuisine/roti canai.jpeg" alt="Roti Canai" class="cuisine-image">
+                    </a>
+                    <div class="cuisine-overlay">
+                        <h3>Indian Cuisine</h3>
+                        <p>Roti Canai</p>
+                        <a href="cuisine.html" class="cuisine-link">Learn More</a>
+                    </div>
+                </div>
+        </section>
+        
+        <section class="travel-info-section">
+            <div class="travel-info-header">
+                <h2>Travel Information</h2>
+            </div>
+            <div class="travel-info-content">
+                <article class="travel-info-article">
+                    <div class="travel-info-image" style="background-image: url('travel/transport.jpg');"></div>
+                    <div class="travel-info-text">
+                        <h3>Navigate Malaysia with Ease</h3>
+                        <p>Discover convenient travel options, including public transit, taxis, ride-sharing services, car rentals, and domestic flights, to move smoothly and efficiently across the country.</p>
+                        <a href="travel_info.html" class="travel-info-link">Read More</a>
+                    </div>
+                </article>
+                <article class="travel-info-article">
+                    <div class="travel-info-image" style="background-image: url('travel/safe2.png');"></div>
+                    <div class="travel-info-text">
+                        <h3>Safety Guidelines</h3>
+                        <p>Stay informed with our travel safety guidelines. Ensure a safe journey with tips on health, security, and emergency contacts.</p>
+                        <a href="travel_info.html" class="travel-info-link">Read More</a>
+                    </div>
+                </article>
+                <article class="travel-info-article">
+                    <div class="travel-info-image" style="background-image: url('travel/img3.jpeg');"></div>
+                    <div class="travel-info-text">
+                        <h3>Must-See Attractions</h3>
+                        <p>Explore top attractions in Malaysia, from vibrant cities to serene landscapes. Find out what makes each place unique and worth a visit.</p>
+                        <a href="travel_info.html" class="travel-info-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="blog-news-section">
+            <div class="container">
+                <h2>Blog & News</h2>
+                <div class="blog-cards">
+                    <div class="blog-card">
+                        <img src="Picture/img22.jpeg" alt="Langkawi">
+                        <div class="blog-card-content">
+                            <h3>Tropical Bliss: Langkawi's Pristine Shores</h3>
+                            <p>Relax on Langkawi's sun-drenched beaches, where a lone traveler enjoys the turquoise waters and golden sands. Surrounded by lush hills and inviting amenities, Langkawi offers a perfect escape for peaceful walks and tropical adventures. Discover your paradise here.</p>
+                            <a href="news_blogs.html" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="Picture/img23.png" alt="Mount Kinabalu Trek">
+                        <div class="blog-card-content">
+                            <h3>Summit Adventure: Mount Kinabalu Trek</h3>
+                            <p>Experience the thrill of climbing Mount Kinabalu, Southeast Asia's highest peak. This image shows hikers making their way up the granite slopes, with the dramatic landscape and early morning light promising a stunning sunrise. Embrace the challenge and witness Borneo’s breathtaking beauty from above.</p>
+                            <a href="news_blogs.html" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="Picture/img24.png" alt="Ocean">
+                        <div class="blog-card-content">
+                            <h3>Crystal Clear Adventures: Transparent Kayaking in Paradise</h3>
+                            <p>Experience the beauty of tropical waters with transparent kayaking, where a clear-bottomed kayak lets you marvel at vibrant marine life and coral formations beneath the turquoise surface. Enjoy an unforgettable aquatic adventure with a unique view of the ocean’s wonders.</p>
+                            <a href="news_blogs.html" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/malaysia.travel.my" target="_blank">
+                <img src="Picture/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/malaysia.truly.asia/" target="_blank">
+                <img src="Picture/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <button id="scrollToTopBtn" title="Go to top">
+            <img src="Picture/arrow-up.png" alt="Go to top" width="20" height="20">
+        </button>
+
+    <footer>
+        <p>&copy; 2024 Malaysia Magic. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:alvinlaw1668@1utar.my">alvinlaw1668@1utar.my</a>
+        </address>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

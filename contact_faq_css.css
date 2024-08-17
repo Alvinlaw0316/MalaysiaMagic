@@ -1,0 +1,181 @@
+/*navigation*/
+
+/* Existing FAQ & Contact Us CSS */
+html {
+    background: rgb(0, 77, 172);
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: Calibri, Arial, sans-serif;
+    padding: 20px;
+}
+h1, p {
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 1em 0 .2em;
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: .3em;
+    font-size: 20px;
+    background-color: #fbfbfb;
+    border: solid 1px #CCC;
+    resize: vertical;
+}
+
+/*Form*/
+html {
+    background: rgb(0, 77, 172);
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: Calibri, Arial, sans-serif;
+    padding: 20px;
+}
+h1, p {
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 1em 0 .2em;
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: .3em;
+    font-size: 20px;
+    background-color: #fbfbfb;
+    border: solid 1px #CCC;
+    resize: vertical;
+}
+textarea {
+    min-height: 180px;
+}
+select {
+    color: indigo;
+}
+option {
+    color: blue;
+    background: lavenderBlush;
+}
+input[type=checkbox] {
+    display: inline;
+    width: auto;
+    color: red;
+}
+input[type=submit] {
+    background: lightcoral;
+    margin: 1em 0 0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+input[type=reset]{
+    background: lightcoral;
+    margin: 1em 0 0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+    background: lavenderBlush;
+}
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus{
+    background: lightgreen;
+    outline: none;
+}
+@media screen and (min-width: 600px) {
+    form:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .column {
+        width: 50%;
+        padding: 1em;
+        float: left;
+    }
+}
+
+/* FAQ Section CSS */
+.faq-section {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+.faq-item {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+.faq-item:hover {
+    background-color: #ffffff;
+}
+.faq-item:hover .answer {
+    display: block;
+}
+.question {
+    font-weight: bold;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+}
+.faq-item.open .answer {
+    display: block;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom */
+    right: 30px; /* Place the button 30px from the right */
+    width: 50px; /* Set a width */
+    height: 50px; /* Set a height */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    background-color: #555;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0; /* Remove padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 30px; /* Adjust font size */
+    display: flex; /* Center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0f4fc5; /* Add a dark-grey background on hover */
+}
